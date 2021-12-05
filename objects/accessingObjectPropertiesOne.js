@@ -6,7 +6,8 @@ const accessingProperties = (obj) => {
 
 // TEST
 const test = (obj, target) => {
-  if (obj.country === target) {
+  const result = accessingProperties(obj)
+  if (result === target) {
     return `test ${target} passed`;
   }
   return `test ${target} failed`;
